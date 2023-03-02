@@ -1,4 +1,4 @@
-const country =[
+module.country =[
     {
         name: "India",
         capital: "New Delhi",
@@ -16,4 +16,3 @@ const country =[
         population: 1e+6
     }
 ]
-console.log(country[2].population)
