@@ -11,7 +11,7 @@ const country =[
         population: 200000000,
     },
     {
-        name: "sweden",
+        name: "Sweden",
         capital:"Stockholm",
         population: 1e+6
     }
