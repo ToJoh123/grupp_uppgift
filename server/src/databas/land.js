@@ -1,4 +1,4 @@
-module.country =[
+exports.country = [
     {
         name: "India",
         capital: "New Delhi",
