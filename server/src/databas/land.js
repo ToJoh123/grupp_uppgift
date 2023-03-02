@@ -1,4 +1,4 @@
-exports.country = [
+exports.countries = [
     {
         name: "India",
         capital: "New Delhi",
