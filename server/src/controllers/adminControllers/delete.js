@@ -10,6 +10,6 @@ exports.deleteFunction = function deleteFunction (req, res) {
 
     countries.splice(land, 1)
     res.send(`Deleted ${name}`)
-    console.log('Från index delete', countries)
+    
 }
 

@@ -15,6 +15,6 @@ exports.postFunction = function postFunction (req, res) {
     }
 
     countries.push(req.body)
-    res.status(200).send('Successfully added a country')
-    console.log('Från index post', countries)
+    res.status(201).send('Successfully added a country')
+    
 }
