@@ -24,6 +24,5 @@ exports.postFunction = function postFunction (req, res) {
 
     countries.push(req.body)
     res.status(201).send('Successfully added a country')
-    console.log(countries)
     
 }
