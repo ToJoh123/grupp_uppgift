@@ -15,7 +15,7 @@ exports.postFunction = function postFunction (req, res) {
     }
 
     const { name } = req.body
-    const countryIndex = countries.findIndex(chosenCountry => chosenCountry.name === name)
+    const countryIndex = countries.findIndex(chosenCountry => chosenCountry.name.toLowerCase() === name.toLowerCase())
 
     if (countryIndex !== -1) {
         res.status(409).send('This country already exists in our database')
