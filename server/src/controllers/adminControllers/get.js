@@ -13,7 +13,7 @@ exports.getFunction = function getFunction(req, res) {
    }
 
     const { country } = req.query
-    const land = countries.findIndex(chosenCountry => chosenCountry.name === country)
+    const land = countries.findIndex(chosenCountry => chosenCountry.name.toLowerCase() === country.toLowerCase())
 
     if (land === -1) {
         return res.status(404).send('This country does not exist in our database')
