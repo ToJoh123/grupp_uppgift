@@ -14,7 +14,16 @@ exports.postFunction = function postFunction (req, res) {
         return res.status(400).json(validate.error.details[0].message)
     }
 
+    const { name } = req.body
+    const countryIndex = countries.findIndex(chosenCountry => chosenCountry.name === name)
+
+    if (countryIndex !== -1) {
+        res.status(409).send('This country already exists in our database')
+        return;
+    }
+
     countries.push(req.body)
     res.status(201).send('Successfully added a country')
+    console.log(countries)
     
 }
